@@ -5,11 +5,12 @@ class Ball {
             'density': 0.8,
             'friction': 0.7
         }
-        this.image = loadImage("Sling.png");
+        
         this.body = Bodies.rectangle(x, y, width, height, options);
         this.width = width;
         this.height = height;
-        image.scale = 0.1;
+        //image.scale = 0.1;
+        this.image = loadImage("Sling12.png");
         World.add(world, this.body);
     }
     display(){
